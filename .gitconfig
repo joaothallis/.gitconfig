@@ -1,0 +1,10 @@
+[user]
+	name = João Thallis
+	email = joaothallis@icloud.com
+[core]
+	excludesfile = ~/.gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
