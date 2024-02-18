@@ -1,6 +1,7 @@
 [user]
 	name = João Thallis
 	email = joaothallis@icloud.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB/ciiEw7RjUUD6P9L4qtlUoAqvEWvULK2S5SWA7R/al
 [core]
 	excludesfile = ~/.gitignore_global
 [filter "lfs"]
@@ -8,3 +9,9 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /opt/1Password/op-ssh-sign
+[commit]
+	gpgsign = true
